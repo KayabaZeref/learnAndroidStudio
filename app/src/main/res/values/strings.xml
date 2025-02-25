@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BusinessCard</string>
+    <string name="full_name">Pham Duy Phuong</string>
+    <string name="job_title">Android Developer</string>
+    <string name="phone_number">(+84) 352262703</string>
+    <string name="nickname">phuongisworking</string>
+    <string name="email">phuongisworking@gmail.com</string>
+</resources>
