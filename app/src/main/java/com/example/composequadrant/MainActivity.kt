@@ -8,12 +8,12 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
+
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
+
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
+
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -21,7 +21,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.text.TextStyle
+
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -53,13 +53,13 @@ fun ComposeQuadrantApp(modifier: Modifier = Modifier) {
                 title = stringResource(R.string.top_left_title),
                 description = stringResource(R.string.top_left_description),
                 modifier = Modifier.weight(1f),
-                backgroundColor = Color(0xFFEADDFF),
+                backgroundColor = Color(0xFFF4FFDD),
             )
             ComposeQuadrantText(
                 title = stringResource(R.string.top_right_title),
                 description = stringResource(R.string.top_right_description),
                 modifier = Modifier.weight(1f),
-                backgroundColor = Color(0xFFD0BCFF),
+                backgroundColor = Color(0xFFBCEFFF),
             )
         }
         Row(modifier = modifier.weight(1f)) {
@@ -67,13 +67,13 @@ fun ComposeQuadrantApp(modifier: Modifier = Modifier) {
                 title = stringResource(R.string.bottom_left_title),
                 description = stringResource(R.string.bottom_left_description),
                 modifier = Modifier.weight(1f),
-                backgroundColor = Color(0xFFB69DF8),
+                backgroundColor = Color(0xFFCEF89D),
             )
             ComposeQuadrantText(
                 title = stringResource(R.string.bottom_right_title),
                 description = stringResource(R.string.bottom_right_description),
                 modifier = Modifier.weight(1f),
-                backgroundColor = Color(0xFFF6EDFF),
+                backgroundColor = Color(0xD1BCF8FF),
             )
         }
     }
