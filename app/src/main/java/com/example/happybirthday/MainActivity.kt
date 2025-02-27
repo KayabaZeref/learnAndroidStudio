@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -17,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -40,7 +42,7 @@ class MainActivity : ComponentActivity() {
                 ) {
                     GreetingImage(
                         message = stringResource(R.string.happy_birthday_text),
-                        form = stringResource(R.string.signature_text)
+                        form = stringResource(R.string.signature_text),
                     )
                 }
             }
@@ -49,11 +51,21 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun GreetingText(message: String, form: String, modifier: Modifier = Modifier) {
+fun GreetingText(
+    birthdayIcon: Painter,
+    message: String,
+    form: String,
+    modifier: Modifier = Modifier
+) {
     Column(
         verticalArrangement = Arrangement.Center,
         modifier = modifier
     ) {
+        Image(
+            painter = birthdayIcon,
+            contentDescription = null,
+            modifier = Modifier.fillMaxWidth(),
+        )
         Text(
             text = message,
             fontSize = 80.sp,
@@ -74,9 +86,15 @@ fun GreetingText(message: String, form: String, modifier: Modifier = Modifier) {
 }
 
 @Composable
-fun GreetingImage(message: String, form: String, modifier: Modifier = Modifier) {
+fun GreetingImage(
+    message: String,
+    form: String,
+    modifier: Modifier = Modifier,
+) {
     val image = painterResource(R.drawable.androidparty)
-    Box(modifier) {
+    Box(
+        modifier = modifier,
+    ) {
         Image(
             painter = image,
             contentDescription = null,
@@ -86,6 +104,7 @@ fun GreetingImage(message: String, form: String, modifier: Modifier = Modifier) 
         GreetingText(
             message = message,
             form = form,
+            birthdayIcon = painterResource(R.drawable.birthday_cake),
             modifier = Modifier
                 .fillMaxSize()
                 .padding(8.dp)
