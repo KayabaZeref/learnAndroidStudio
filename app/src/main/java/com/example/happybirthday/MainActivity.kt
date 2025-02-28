@@ -109,6 +109,28 @@ fun GreetingImage(
                 .fillMaxSize()
                 .padding(8.dp)
         )
+        ContactInformation(
+            name = "Pham Duy Phuong",
+            email = "phuongisworking@gmail.com",
+            phoneNumber = "0352262703",
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .padding(8.dp)
+        )
+    }
+}
+
+@Composable
+fun ContactInformation(
+    name: String,
+    email: String,
+    phoneNumber: String,
+    modifier: Modifier = Modifier
+) {
+    Column(modifier = modifier.fillMaxWidth()) {
+        Text(text = name, fontWeight = FontWeight.Bold, color = Color(0xFF6B37BF))
+        Text(text = email, color = Color(0xFF6B37BF))
+        Text(text = phoneNumber, color = Color(0xFF6B37BF))
     }
 }
 
