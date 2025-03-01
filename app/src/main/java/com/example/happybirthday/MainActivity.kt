@@ -110,9 +110,9 @@ fun GreetingImage(
                 .padding(8.dp)
         )
         ContactInformation(
-            name = "Pham Duy Phuong",
-            email = "phuongisworking@gmail.com",
-            phoneNumber = "0352262703",
+            name = stringResource(R.string.contact_name),
+            email = stringResource(R.string.contact_mail),
+            phoneNumber = stringResource(R.string.contact_phonenumber),
             modifier = Modifier
                 .align(Alignment.BottomCenter)
                 .padding(8.dp)
@@ -139,8 +139,8 @@ fun ContactInformation(
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
         GreetingImage(
-            message = "Happy Birthday Sam!",
-            form = "From Emma",
+            message = stringResource(R.string.happy_birthday_text),
+            form = stringResource(R.string.signature_text),
         )
 
     }

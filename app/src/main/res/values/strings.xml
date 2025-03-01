@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Happy Birthday</string>
-    <string name="happy_birthday_text">Happy Birthday Sam!</string>
+    <string name="happy_birthday_text">Happy Birthday Zeref!</string>
     <string name="signature_text">From Emma</string>
+    <string name="contact_name">Pham Duy Phuong</string>
+    <string name="contact_mail">phuongisworking@gmail.com</string>
+    <string name="contact_phonenumber">0352262703</string>
 </resources>
