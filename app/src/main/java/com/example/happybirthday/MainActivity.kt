@@ -91,7 +91,7 @@ fun GreetingImage(
     form: String,
     modifier: Modifier = Modifier,
 ) {
-    val image = painterResource(R.drawable.androidparty)
+    val image = painterResource(R.drawable.simple_birthday_pattern_birthday_background)
     Box(
         modifier = modifier,
     ) {
@@ -127,10 +127,18 @@ fun ContactInformation(
     phoneNumber: String,
     modifier: Modifier = Modifier
 ) {
+    Box(modifier = modifier.fillMaxWidth()){
+        Image(
+            painter = painterResource(R.drawable.simple_birthday_pattern_birthday_background),
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            alpha = 0.5F
+        )
     Column(modifier = modifier.fillMaxWidth()) {
         Text(text = name, fontWeight = FontWeight.Bold, color = Color(0xFF6B37BF))
         Text(text = email, color = Color(0xFF6B37BF))
         Text(text = phoneNumber, color = Color(0xFF6B37BF))
+    }
     }
 }
 
