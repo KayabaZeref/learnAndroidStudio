@@ -80,7 +80,7 @@ fun GreetingText(
             modifier = Modifier
                 .padding(16.dp)
                 .align(alignment = Alignment.CenterHorizontally),
-            color = Color(0xFF0F8693)
+            color = Color(0xFF3F51B5)
         )
     }
 }
