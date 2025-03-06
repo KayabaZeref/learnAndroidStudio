@@ -72,7 +72,7 @@ fun GreetingText(
             lineHeight = 116.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
-            color = Color(0xFF3F51B5),
+            color = Color(0xFFFFEB3B),
         )
         Text(
             text = form,
