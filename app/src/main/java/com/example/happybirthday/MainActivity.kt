@@ -72,7 +72,7 @@ fun GreetingText(
             lineHeight = 116.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
-            color = Color(0xFFFF5722),
+            color = Color(0xFF8BC34A),
         )
         Text(
             text = form,
@@ -80,7 +80,7 @@ fun GreetingText(
             modifier = Modifier
                 .padding(16.dp)
                 .align(alignment = Alignment.CenterHorizontally),
-            color = Color(0xFF9C27B0)
+            color = Color(0xFF00BCD4)
         )
     }
 }
