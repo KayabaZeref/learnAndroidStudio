@@ -72,7 +72,7 @@ fun GreetingText(
             lineHeight = 116.sp,
             textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
-            color = Color(0xFF8BC34A),
+            color = Color(0xFF9C27B0),
         )
         Text(
             text = form,
@@ -137,7 +137,7 @@ fun ContactInformation(
     Column(modifier = modifier.fillMaxWidth()) {
         Text(text = name, fontWeight = FontWeight.Bold, color = Color(0xFF5B1BC9))
         Text(text = email, color = Color(0xFF5B1BC9))
-        Text(text = phoneNumber, color = Color(0xFF5B1BC9))
+        Text(text = phoneNumber, color = Color(0xFF4CAF50))
     }
     }
 }
