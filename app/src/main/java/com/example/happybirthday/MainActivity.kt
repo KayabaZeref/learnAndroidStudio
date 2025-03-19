@@ -135,9 +135,9 @@ fun ContactInformation(
             alpha = 0.5F
         )
     Column(modifier = modifier.fillMaxWidth()) {
-        Text(text = name, fontWeight = FontWeight.Bold, color = Color(0xFFFF5722))
-        Text(text = email, color = Color(0xFF2196F3))
-        Text(text = phoneNumber, color = Color(0xFF4CAF50))
+        Text(text = name, fontWeight = FontWeight.Bold, color = Color(0xFF00BCD4))
+        Text(text = email, color = Color(0xFF9C27B0))
+        Text(text = phoneNumber, color = Color(0xFFFFC107))
     }
     }
 }
